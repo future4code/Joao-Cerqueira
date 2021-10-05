@@ -61,6 +61,9 @@ function checaTriangulo(a, b, c) {
   // return 'Escaleno'
   // return 'Equilátero'
   // return 'Isósceles'
+  let classificacao;
+  a == b && b == c ? classificacao = 'Equilátero' : a == b || a == c || c == b ? classificacao = 'Isósceles' : classificacao = 'Escaleno'
+  return classificacao
 }
 
 // EXERCÍCIO 09
