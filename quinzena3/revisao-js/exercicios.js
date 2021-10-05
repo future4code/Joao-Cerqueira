@@ -18,12 +18,14 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
-
+  const maiorNumero = Math.max(...array)
+  return maiorNumero // essa aqui um colega me ajudou
 }
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-  
+ 
+ 
 }
 
 // EXERCÍCIO 06
