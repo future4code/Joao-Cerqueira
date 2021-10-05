@@ -74,12 +74,25 @@ function comparaDoisNumeros(num1, num2) {
   //   maiorDivisivelPorMenor: Y,
   //   diferenca: Z
   // }
+
+  //BOIEIIII nesse 09, :CCC
 }
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+        if (array[j] > array[j + 1]) {
+            let teste = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = teste;
+          }
+        }
+    }
+ return [array[array.length - 2], array[1]]
 }
+
+
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
