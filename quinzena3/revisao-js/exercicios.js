@@ -24,8 +24,8 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
- 
- 
+  const array1 = array.length
+  return array1
 }
 
 // EXERCÍCIO 06
