@@ -132,7 +132,13 @@ function imprimeChamada() {
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
+  const objetao=new Object()
+objetao.largura=lado1;
+objetao.altura=lado2
+objetao.perimetro=2 * (lado1+lado2)
+objetao.area=lado1*lado2
 
+return objetao
 }
 
 // EXERCÍCIO 15
