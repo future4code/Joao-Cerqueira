@@ -154,6 +154,8 @@ function maioresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
+  const deMenor=arrayDePessoas.filter(item=>item.idade<18)
+  return deMenor
 
 }
 
