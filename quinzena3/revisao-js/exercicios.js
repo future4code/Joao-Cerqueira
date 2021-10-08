@@ -161,7 +161,8 @@ function menoresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
-
+  const multiplica=array.map(item=>item*2)
+  return multiplica
 }
 
 // EXERCÍCIO 17B
