@@ -70,10 +70,13 @@ div img {
     padding: 20px;
     background-color: #2274a5;
     color: white;
+    
 }
 
 #container-de-descricao p{
     width: 10%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #container-de-descricao>ol {
