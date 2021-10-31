@@ -1,0 +1,207 @@
+body{
+    background-image: url(/img/teste4.jpg);
+}
+
+.navegador {
+    overflow: hidden;
+    background-color: rgb(88, 20, 46);
+    padding: 0px;
+  }
+  
+  .navegador a{
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+  .navegador a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .fonte{
+        font-family: monospace;
+    }
+
+    .header {
+        text-align: center;
+        color: white;
+    }
+
+    .sombra1 {
+        width: 720px;
+        padding: 5px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 320px;
+        margin-right: 1375px;
+        opacity: 0.6;
+        text-align: center;
+    }
+    .sombra2 {
+        width: 1900px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: black;
+    } 
+
+    .sombra3 {
+        width: 1055px;
+        float: right;
+        height: 324px;
+        padding: 50px;
+        background-color: rgb(255, 255, 255, 0.6);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .sombra4 {
+        width: 630px;
+        height: 200px;
+        float: left;
+        padding: 50px;
+        background-color: rgb(255, 255, 255, 0.6);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .sombra5 {
+        width: 930px;
+        height: 350px;
+        background-color: rgb(255, 255, 255, 0.6);
+    
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .sombra6 {
+        width: 952px;
+        height: 350px;
+        background-color: rgb(255, 255, 255, 0.6);
+        border-radius: 10px;
+        margin-top: -350px;
+        margin-left: 940px;
+        float: left;
+    
+    }
+
+    .mid li {
+        font-size: 20px;
+    }
+
+    .mid h1 {
+        font-size: 35px;
+        margin-top: -25px;
+    }
+
+    .texto2 h1 {
+        font-size: 35px;
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+
+    .texto2 li {
+        font-size: 18px;
+        margin-left: 35px;
+        
+    }
+
+    .texto2 h4 {
+        margin-left: 35px;
+        
+    }
+
+    .sombra6 h1 {
+        font-size: 35px;
+        margin-top: 45px;
+        margin-left: 35px;
+    }
+
+    .sombra6 h4 {
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+
+    .sombra6 li{
+        font-size: 18px;
+        margin-left: 35px;
+    }
+
+
+    .footer {
+        width: 0x;
+        height: 0px;
+        padding: 0px;
+        text-align: center;
+        background-color:  rgb(255, 255, 255, 0.6);
+        margin-top: 10px;
+        border-radius: 10px;
+        
+      }
+
+      textarea {
+        width: 750px;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 570px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+        text-align: center;
+      }
+
+      .texto-contato{
+          color: white;
+          font-size: 25px;
+          text-align: center;
+          margin-top: 100px;
+          
+      }
+
+      .img-perfil {
+          margin-left: 750px;
+          margin-top: -135px;
+      }
+
+
+      .sombra3 p {
+          font-size: 17px;
+      }
+
+      .trabalho1 {
+        margin-left: 1100px;
+        margin-top: 150px;
+      }
+
+      .trabalho2 {
+        margin-left: 400px;
+        margin-top: -110px;
+      }
+
+      .print1 {
+          text-align: center;
+      }
+
+
+
+      .social{
+          margin-top: 100px;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+      }
+
+      form p {
+          text-align: center;
+          font-size: 30px;
+          color: white;
+      }
