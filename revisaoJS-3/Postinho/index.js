@@ -14,10 +14,16 @@ console.log(checarDesigualdade(1, 2));
 // b-)Compare a igualdade entre a===b
 
 function checarIgualdade(a, b) {
-    //  Sua lógica aqui
+
+    return `No comparador de igualdade ${a}===${b} é ${a === b}`
 }
 
 // c-)Faça uma função chamada "verificaSeEMaior"
+
+function verificaSeEMaior(a, b) {
+
+    return `verifica se é maior ${a}>${b} é ${a > b}`
+}
 
 console.log(verificaSeEMaior(321, 2156));
 
