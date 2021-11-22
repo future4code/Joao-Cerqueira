@@ -1,77 +1,100 @@
-import React from "react";
-import './App.css';
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components'
 
 
-
-const Layout = styled.a`
-  text-align: center;
-  color: green;
-`
-
-const LayoutPrincipal = styled.a`
+const Tela = styled.div`
 display:flex;
 justify-content:center;
-`
 
-const Caixa = styled.header`
+`
+const Layout = styled.div`
 max-width: 600px;
-height: 80vh;
+height: 90vh;
 border: 1px solid black;
 flex: 1 1 0%;
 display: flex;
 flex-direction: column;
+
 `
+const Conteudo = styled.div`
+flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 20px;
+    
+`
+const Box = styled.div`
+display:flex;`
 
-
-
+const InputUser = styled.input`
+width:100px;
+`
+const InputMessage = styled.input`
+display: flex;
+width: 100%;
+`
 
 class App extends React.Component {
   state = {
-    mensagem: "",
-    usuario: ""
+    mensagem: [
+      {
+        user: "",
+        message: ""
+      },
 
+    ],
+    valorInputUser: '',
+    valorInputMessage: ''
   }
-
-  mudaMensagem = (event) => {
-    this.setState({ mensagem: event.target.value });
-  }
-
-  mudaUsuario = (event) => {
-    this.setState({ usuario: event.target.value });
-  }
-
-  enviarMensagem = () => {
+  adicionaMensagem = () => {
     const novaMensagem = {
-      novaMensagem: this.state.mensagem
+      user: this.state.valorInputUser,
+      message: ": " + this.state.valorInputMessage
     }
+    const novaMensagens = [...this.state.mensagem, novaMensagem]
+    this.setState({ mensagem: novaMensagens })
   }
 
+  onChangeInputUser = (e) => {
+    this.setState({ valorInputUser: e.target.value })
+  }
 
-
+  onChangeInputMessage = (e) => {
+    this.setState({ valorInputMessage: e.target.value })
+  }
   render() {
-    console.log(this.state.mensagem)
+    const listaMensagens = this.state.mensagem.map((frase) => {
+      return (
+
+        <p> <span> {frase.user}</span>
+          {frase.message}</p>
+
+      )
+    })
     return (
-      <LayoutPrincipal>
-      <Layout>
-        <div>
-        <h1>WhatsLAB</h1>
-          <div>
-          <Caixa></Caixa>
-          </div>
-          
-          
-          <span>Usuário:</span>
-          <input value={this.state.usuario} onChange={this.mudaUsuario} />
-          <span>Mensagem:</span>
-          <input value={this.state.mensagem} onChange={this.mudaMensagem} />
-          <button onClick={this.enviarMensagem}>Enviar</button>
-         
-        </div>
+      <Tela>
+        <Layout>
+          <Conteudo>{listaMensagens}</Conteudo>
+          <Box>
+            <InputUser
+              value={this.state.valorInputUser}
+              onChange={this.onChangeInputUser}
+              placeholder={"Usuário"}
+            />
+            <InputMessage
+              value={this.state.valorInputMessage}
+              onChange={this.onChangeInputMessage}
+              placeholder={"Mensagem"}
+            />
+            <button onClick={this.adicionaMensagem}>Enviar</button>
+          </Box>
         </Layout>
-        </LayoutPrincipal>
-    )
+      </Tela>
+    );
   }
+
 }
 
 export default App;
