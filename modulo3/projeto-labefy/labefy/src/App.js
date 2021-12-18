@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Body from "./components/Body";
+import Playlist from "./components/Playlist";
+import AddPlaylist from "./components/AddPlaylist";
+import styled from "styled-components";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Main=styled.html`
+background-color:Teal;
+color:Gainsboro;
+`
+
+
+
+export default class App extends React.Component {
+  state = {
+    currentPage: "playlistManager",
+  
+  };
+
+  mudaPagina = (pagina) => {
+    this.setState({ currentPage: pagina });
+  };
+
+  render() {
+    const renderPagina = () => {
+      if (this.state.currentPage === "criaPlaylist") {
+        return <Playlist />;
+      } else if (this.state.currentPage === "playlistManager") {
+        return <AddPlaylist />;
+      }
+    };
+    return (
+      <Main>
+        <Body mudaPagina={this.mudaPagina} />
+
+        {renderPagina()}
+        
+        
+      </Main>
+    );
+  }
 }
-
-export default App;
