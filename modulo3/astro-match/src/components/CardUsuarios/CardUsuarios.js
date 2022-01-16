@@ -14,8 +14,8 @@ const CardUsuarios = (props) => {
         <p>{props.profile.age} anos</p>
             <p>{props.profile.bio}</p>
             <div className="BotaoMatch">
-                <img className="ImagemMatch" src="https://cdn-icons-png.flaticon.com/512/148/148766.png" onClick={() => props.disMatch()} />
-                <img className="ImagemMatch" src="https://cdn-icons-png.flaticon.com/512/148/148767.png" onClick={() => props.choosePerson(props.profile.id, true)} />
+                <img className="ImagemMatch" src="https://icones.pro/wp-content/uploads/2021/08/icone-x-avec-cercle-rouge.png" onClick={() => props.disMatch()} />
+                <img className="ImagemMatch" src="https://i.pinimg.com/originals/e6/67/00/e6670020a3b45158631763a246cf1742.png" onClick={() => props.choosePerson(props.profile.id, true)} />
             </div>
         </div>
     )

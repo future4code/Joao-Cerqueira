@@ -5,8 +5,8 @@
     justify-content: center;
     height: 55vh;
     width: 65vh;
-    flex-shrink: 100%;
-    padding: 10px;
+    padding: 15px;
+    font-weight: bold;
 }
 
 .FotoPerfil {
