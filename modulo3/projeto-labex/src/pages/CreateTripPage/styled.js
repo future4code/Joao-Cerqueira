@@ -23,9 +23,10 @@ export const ContainerForms = styled.div`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   height: 100%;
+  min-height: 100vh;
   background-color: #F5FFFA;
+
 `
 
 export const Select = styled.select`
@@ -47,7 +48,6 @@ export const Input = styled.input`
   background-color: #3CB371;
   color: black;
 `
-
 export const Container2 = styled.div`
 display: flex;
 flex-direction: row;
