@@ -35,9 +35,10 @@ export const ListCards = styled.div`
   justify-content: space-between;
  `
 export const Button = styled.button`
-  border-radius: 20%;
+border-radius: 15%;
   background-color: #3CB371;
   font-weight: bolder;
   width: 4vw; 
   cursor: pointer;
+  border: 2px solid black; 
 `
